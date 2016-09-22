@@ -1,0 +1,11 @@
+<ion-view view-title="通讯录备份">
+  <ion-content>
+      <button ng-click="getAllContacts()" class="button button-balanced">获取通讯录</button>
+      <button ng-show="staus" class="button button-balanced">备份通讯录</button>
+        <ul  ng-repeat="UserContacts in user.contacts" class="list">
+            <li class="item">
+              {{ UserContacts.displayName }}:{{ UserContacts.phoneNumbers[0].value }}
+            </li>
+        </ul>
+  </ion-content>
+</ion-view>

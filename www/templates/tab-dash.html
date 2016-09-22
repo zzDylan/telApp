@@ -1,0 +1,17 @@
+<ion-view view-title="我的云通讯录">
+  <ion-content class="padding">
+        <button ng-click="cloudToPhone()" class="button button-calm">
+          将云通讯录导入到手机(重复的会自动过滤)
+        </button>
+        <ul class="list">
+            <li ng-repeat="item in items" class="item">
+                <div style="float: left">{{ item.name }}</div>
+                <div style="float: right">
+                    <button class="button button-positive">
+                        <i class="icon ion-ios-telephone"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+  </ion-content>
+</ion-view>
